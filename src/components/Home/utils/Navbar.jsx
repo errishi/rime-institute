@@ -23,14 +23,14 @@ const Navbar = () => {
     };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white">
+    <header className="fixed top-0 left-0 right-0 bg-white z-5">
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-2 text-sm">
             <div className="flex items-center gap-6">
               <a href="tel:1800-833-3338" className="flex items-center gap-2 text-gray-700 hover:text-[#C9A961]">
                 <Phone className="w-4 h-4" />
-                <span className="hidden sm:inline">1800-833-3338</span>
+                <span className="hidden sm:inline">+91-8810676939</span>
               </a>
               <div className="flex items-center gap-2 bg-[#C9A961] text-white px-3 py-1 rounded">
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse" />

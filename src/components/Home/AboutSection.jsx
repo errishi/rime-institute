@@ -1,0 +1,46 @@
+import React from 'react'
+import { ImageWithFallback } from './utils/ImageWithFallback';
+import { Link } from 'react-router-dom';
+
+const AboutSection = () => {
+    return (
+        <section className="py-20 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div className="inline-block bg-[#C9A961] text-white px-4 py-1 text-sm mb-4">
+                            ABOUT RIME
+                        </div>
+                        <h2 className="text-4xl mb-6 text-gray-900">
+                            Rattan Institute of <span className="text-[#C9A961]">Management & Engineering</span>
+                        </h2>
+                        <p className="text-gray-600 mb-6 leading-relaxed">
+                            RIME is a premier educational institution committed to providing world-class education
+                            and fostering innovation. With state-of-the-art infrastructure, experienced faculty,
+                            and industry collaborations, we ensure holistic development of students.
+                        </p>
+                        <p className="text-gray-600 mb-8 leading-relaxed">
+                            Our programs are designed to meet international standards while being relevant to
+                            the Indian context, preparing students for global careers and challenges.
+                        </p>
+                        <Link
+                            to="/about"
+                            className="inline-block bg-[#C9A961] text-white px-8 py-3 rounded font-semibold hover:bg-[#b89851] cursor-pointer transition-colors"
+                        >
+                            Learn More
+                        </Link>
+                    </div>
+                    <div className="relative h-100 rounded-lg overflow-hidden shadow-2xl">
+                        <ImageWithFallback
+                            src="/library-image.png"
+                            alt="RIME Campus"
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default AboutSection;
