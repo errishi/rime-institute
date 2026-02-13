@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImageWithFallback } from './utils/ImageWithFallback';
+import { ImageWithFallback } from '../utils/ImageWithFallback';
 import { CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

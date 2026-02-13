@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImageWithFallback } from './utils/ImageWithFallback';
+import { ImageWithFallback } from '../utils/ImageWithFallback';
 import { Link } from 'react-router-dom';
 
 const AboutSection = () => {

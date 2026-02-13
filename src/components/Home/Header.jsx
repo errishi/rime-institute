@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImageWithFallback } from './utils/ImageWithFallback';
+import { ImageWithFallback } from '../utils/ImageWithFallback';
 
 const Header = () => {
   return (
