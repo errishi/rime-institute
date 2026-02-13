@@ -29,7 +29,7 @@ const ProgramOffer = () => {
                     <div className="inline-block bg-[#C9A961] text-white px-4 py-1 text-sm mb-4">
                         OUR PROGRAMS
                     </div>
-                    <h2 className="text-4xl mb-4 text-gray-900">
+                    <h2 className="text-4xl mb-4 font-bold text-gray-900">
                         Programs We <span className="text-[#C9A961]">Offer</span>
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">

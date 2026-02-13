@@ -11,7 +11,7 @@ const AboutSection = () => {
                         <div className="inline-block bg-[#C9A961] text-white px-4 py-1 text-sm mb-4">
                             ABOUT RIME
                         </div>
-                        <h2 className="text-4xl mb-6 text-gray-900">
+                        <h2 className="text-4xl font-bold mb-6 text-gray-900">
                             Rattan Institute of <span className="text-[#C9A961]">Management & Engineering</span>
                         </h2>
                         <p className="text-gray-600 mb-6 leading-relaxed">
