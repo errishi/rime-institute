@@ -9,6 +9,8 @@ import Program from './pages/Program';
 import Admission from './pages/Admission';
 import Gallary from './pages/Gallary';
 import NotFound from './pages/NotFound';
+import ScrollToTop from './components/utils/ScrollToTop';
+import WhatsAppButton from './components/utils/WhatsAppButton';
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
         <Route path='/*' element={<NotFound />} />
       </Routes>
       <Footer />
+      <WhatsAppButton />
+      <ScrollToTop />
     </div>
   )
 }
