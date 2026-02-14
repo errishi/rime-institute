@@ -33,8 +33,8 @@ const CardInfo = () => {
                         const Icon = info.icon;
                         return (
                             <div key={index} className="bg-white rounded-lg p-6 shadow-lg text-center">
-                                <div className="inline-flex items-center justify-center w-16 h-16 bg-red-50 rounded-full mb-4">
-                                    <Icon className="w-8 h-8 text-[#E31E24]" />
+                                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#C9A961]/10 rounded-full mb-4">
+                                    <Icon className="w-8 h-8 text-[#C9A961]" />
                                 </div>
                                 <h3 className="text-xl font-semibold text-blue-900 mb-3">{info.title}</h3>
                                 {info.details.map((detail, idx) => (

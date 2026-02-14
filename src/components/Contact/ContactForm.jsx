@@ -23,7 +23,7 @@ const ContactForm = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-4xl mb-6 text-blue-900">Send us a Message</h2>
+              <h2 className="text-4xl mb-6 text-blue-900 font-bold">Send us a Message</h2>
               <p className="text-gray-600 mb-8">
                 Fill out the form below and we'll get back to you as soon as possible
               </p>
