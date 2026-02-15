@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/utils/Navbar';
 import Footer from './components/utils/Footer';
 import { Route, Routes } from 'react-router-dom';
@@ -13,11 +13,16 @@ import ScrollToTop from './components/utils/ScrollToTop';
 import WhatsAppButton from './components/utils/WhatsAppButton';
 import LenisScroll from './components/utils/LenisScroll';
 import ScrollTop from './components/utils/ScrollTop';
+import EnquiryButton from './components/Enquiry/EnquiryButton';
+import EnquiryForm from './components/Enquiry/EnquiryForm';
 
 const App = () => {
+  const [EnquiryFormPopUp, setEnquiryFormPopUp] = useState(false);
+
   return (
     <>
       <ScrollTop />
+      { EnquiryFormPopUp ? <EnquiryForm setClose={setEnquiryFormPopUp} /> : <></> }
       <div>
         <LenisScroll />
         <Navbar />
@@ -31,6 +36,7 @@ const App = () => {
           <Route path='/*' element={<NotFound />} />
         </Routes>
         <Footer />
+        <EnquiryButton setOpen={setEnquiryFormPopUp} />
         <WhatsAppButton />
         <ScrollToTop />
       </div>
