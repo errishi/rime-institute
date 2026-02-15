@@ -11,24 +11,30 @@ import Gallary from './pages/Gallary';
 import NotFound from './pages/NotFound';
 import ScrollToTop from './components/utils/ScrollToTop';
 import WhatsAppButton from './components/utils/WhatsAppButton';
+import LenisScroll from './components/utils/LenisScroll';
+import ScrollTop from './components/utils/ScrollTop';
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Routes >
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/programs' element={<Program />} />
-        <Route path='/admissions' element={<Admission />} />
-        <Route path='/gallery' element={<Gallary />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/*' element={<NotFound />} />
-      </Routes>
-      <Footer />
-      <WhatsAppButton />
-      <ScrollToTop />
-    </div>
+    <>
+      <ScrollTop />
+      <div>
+        <LenisScroll />
+        <Navbar />
+        <Routes >
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/programs' element={<Program />} />
+          <Route path='/admissions' element={<Admission />} />
+          <Route path='/gallery' element={<Gallary />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/*' element={<NotFound />} />
+        </Routes>
+        <Footer />
+        <WhatsAppButton />
+        <ScrollToTop />
+      </div>
+    </>
   )
 }
 
