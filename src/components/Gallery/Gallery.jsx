@@ -53,7 +53,7 @@ const Gallery = () => {
 
     return (
         <div>
-            <section className="py-8 bg-white border-b sticky top-30 z-40">
+            <section className="py-8 bg-white border-b sticky top-30 z-1">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-wrap gap-4 justify-center">
                         {categories.map((category) => (
