@@ -1,4 +1,3 @@
-import { MapPin } from 'lucide-react';
 import React from 'react'
 import MapTiler from './MapTiler';
 
